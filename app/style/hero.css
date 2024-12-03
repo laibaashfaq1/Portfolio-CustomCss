@@ -1,0 +1,44 @@
+/* Hero Container */
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000; /* Optional: Background color for better visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjusts height dynamically */
+    width: 100%;
+}
+
+/* Hero Text */
+.hero-text {
+    color: #ffffff;
+    font-size: 6.25rem; /* Large text for hero */
+    text-align: center;
+    line-height: 1.25;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase; /* Optional: Make text uppercase */
+    display: flex; /* Use flexbox to align the words */
+    gap: 1rem; /* Adjust the space between the words */
+}
+
+/* Spacing between each word (if more custom control is needed) */
+.hero-word {
+    display: inline-block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 3rem; /* Smaller font size for smaller screens */
+    }
+}

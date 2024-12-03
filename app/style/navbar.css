@@ -1,0 +1,106 @@
+/* Main Navbar Container */
+.navbar-container {
+    padding-top: 2rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1280px) {
+    .navbar-container {
+        max-width: 1280px;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: white;
+}
+
+/* Desktop Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: white; /* Text color set to white */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-link a:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+/* Hamburger Menu Icon */
+.navbar-menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white; /* Icon color */
+}
+
+/* Mobile Menu */
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar-menu li a {
+    font-size: 1.25rem;
+    color: white; /* Mobile menu link color */
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar-links {
+        display: none; /* Hide links on smaller screens */
+    }
+
+    .navbar-menu-icon {
+        display: block; /* Show hamburger menu icon */
+    }
+
+    .navbar-menu {
+        display: flex;
+        background-color: #333; /* Optional: Set a background color */
+        padding: 1rem;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-menu-icon {
+        display: none;
+    }
+}
